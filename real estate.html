@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Wealthome">
+    <meta name="description" content="this is a realestate website devloped by codewithsadee">
+    <title>Wealthome</title>
+    <link rel="stylesheet" type="text/css" href="text.css">
+
+
+
+</head>
+
+<body class="dark">
+
+    <!-- Float Button -->
+    <button type="button" id="buttonFLoat" class="floating-btn">
+        CHANGE background
+    </button>
+    
+    <header>
+        <ul class="navbar-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#"> Buying</a></li>
+            <li><a href="#">Renting</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="h-btn">
+
+            <a href="#" class="h-btn1">Login</a>
+            <a href="#" class="h-btn2">Sign Up</a>
+
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-text">
+            <h1> Your House Is Waiting For You!</h1>
+            <p>if you are looking for a place where you can be yourself , dont give up . keep searching until you find a
+                place that feels like home .</p>
+            <div class="h-search">
+                <form>
+                    <input type="search" placeholder="Search by location" class="search-input">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="pic.png">
+
+        </div>
+    </section>
+    <section class="property">
+        <div class="Center-lift">
+            <h2> Popular Residence </h2>
+        </div>
+
+        <div class="property-content">
+            <div class="row">
+                <img src="p1.jpg">
+                <h5> $352,982</h5>
+                <div class="list">
+                    <p> 10 room 2 bath </p>
+
+                </div>
+
+            </div>
+
+            <div class="property-content2">
+                <div class="row">
+                    <img src="p4.jpg">
+                    <h5> $208,724</h5>
+                    <div class="list">
+                        <p> 7 room 2 bath </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="property-content2">
+                <div class="row">
+                    <img src="p3.jpg">
+                    <h5> $100,563</h5>
+                    <div class="list">
+                        <p> 5 room 1 bath </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="center-btn">
+            <a href="#" class="btn"> View All Properties</a>
+        </div>
+
+    </section>
+    <section class="About">
+        <div class="About-img">
+            <img src="inside.png">
+        </div>
+        <div class="About-text">
+            <h2> We Help People To Find Homes </h2>
+            <p> each listing includes detailed descriptions, high-quality images,
+                and essential information about the property,ensuring you
+                have all the details you nedd to make and informed decisin.
+                team of professionals is here to assist you in your search and
+                help you find the home that meets your specific requirements. </p>
+
+        </div>
+
+
+    </section>
+    <section class="subscribe">
+        <div class="subscribe-content">
+            <h2> Lets simply being with you</h2>
+            <p>stay up-to-date with the latest real estate trends,
+                market insights, and exclusive property pffers by
+                subscribing to our company. as a subscriber you
+                will receive regular emails packed with valuable z
+                information.simply inter your email adress below
+                and start receiving our informative newsletters
+                directly in your inbox.</p>
+            <a href="#" class="btn">Get Started</a>
+
+        </div>
+    </section>
+    
+    <script>
+
+
+        const buttonFloat = document.querySelector('.floating-btn');
+        console.log(buttonFloat)
+
+        let allchar = "0123456789ABCDEF";
+
+
+        buttonFloat.addEventListener("click", myFun);
+
+        function myFun() {
+            let randcol = "";
+            for (let i = 0; i < 6; i++) {
+                randcol += allchar[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.backgroundColor = "#" + randcol;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
